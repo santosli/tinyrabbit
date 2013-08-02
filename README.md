@@ -3,6 +3,7 @@ tinyrabbit
 
 a little tiny rabbit
 
-log
+=============log=============
 
-0.1.0 add GetListFromURL and GetListFromHTML
+0.1.0 
+-add GetListFromURL and GetListFromHTML

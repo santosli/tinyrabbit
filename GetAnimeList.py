@@ -4,6 +4,8 @@
 import urllib2
 from lxml import etree
 import datetime
+import sys
+
 
 def GetListFromURL():	
 	response = urllib2.urlopen("http://bt.ktxp.com/playbill.php")
@@ -38,12 +40,13 @@ def GetListFromHTML():
 		week = 7
 
 	#print week
+	weekCh = [u'神',u'星期一',u'星期二',u'星期三',u'星期四',u'星期五',u'星期六',u'星期日']
 
 	anime = tree.xpath(u"//div")
 
-	print anime[week].text
+	print u"今日是" + weekCh[week] + ":" + anime[week].text
 
 
 
 if __name__ == "__main__":
-	GetListFromXML()
+	GetListFromHTML()

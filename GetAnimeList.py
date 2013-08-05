@@ -34,10 +34,7 @@ def GetListFromHTML():
 	tree = etree.HTML(html)
 
 	date = datetime.datetime.now()
-	week = date.weekday()
-
-	if week == 0:
-		week = 7
+	week = date.isoweekday()
 
 	#print week
 	weekCh = [u'神',u'星期一',u'星期二',u'星期三',u'星期四',u'星期五',u'星期六',u'星期日']

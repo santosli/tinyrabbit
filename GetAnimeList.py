@@ -41,7 +41,7 @@ def GetListFromHTML():
 
 	anime = tree.xpath(u"//div")
 
-	print u"今日是" + weekCh[week] + ":" + anime[week].text
+	print u"今日是" + weekCh[week] + ":" + anime[week-1].text
 
 
 
